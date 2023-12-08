@@ -25,5 +25,11 @@ router.get("/products/:data/:categoria", async (req, res) => {
     res.status(500).send({ error: "Erro ao buscar produtos" });
   }
 });
+router.get("/", async (req, res) => {
+
+    res.status(200).send({ sucess: "Funciona" });
+  }
+});
+
 
 module.exports = router;
